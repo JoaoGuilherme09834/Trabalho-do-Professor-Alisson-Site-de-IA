@@ -1,0 +1,468 @@
+/* ============================================
+   IMPORTAÇÃO DE FONTE GOOGLE - Estilo Retrô
+   ============================================ */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Orbitron:wght@400;700;900&family=Roboto:wght@300;400;700&display=swap');
+
+/* ============================================
+   RESET E CONFIGURAÇÕES GERAIS
+   ============================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Definição do corpo da página */
+body {
+    /* 
+        PALETA DE CORES - Cores Complementares
+        Roxo escuro (#1a0a2e), Roxo médio (#2d1b69),
+        Ciano neon (#00f5ff), Rosa neon (#ff00e5),
+        Amarelo (#ffdd00)
+    */
+    font-family: 'Roboto', sans-serif;
+    background-color: #1a0a2e; /* Roxo escuro */
+    color: #e0e0e0;
+    line-height: 1.8;
+    min-height: 100vh;
+}
+
+/* ============================================
+   CABEÇALHO (HEADER)
+   ============================================ */
+header {
+    background: linear-gradient(135deg, #1a0a2e, #2d1b69);
+    padding: 40px 20px 20px;
+    text-align: center;
+    border-bottom: 4px solid #00f5ff; /* Borda SOLID com ciano neon */
+    position: relative;
+}
+
+header h1 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2rem;
+    color: #ffdd00; /* Amarelo */
+    text-shadow: 0 0 20px rgba(255, 221, 0, 0.3);
+    margin-bottom: 15px;
+}
+
+header .subtitulo {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1rem;
+    color: #00f5ff;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+}
+
+/* ============================================
+   MENU DE NAVEGAÇÃO (NAV)
+   ============================================ */
+nav {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+/* Seletor descendente: aplica estilo apenas aos links dentro de nav */
+nav a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgba(0, 245, 255, 0.1);
+    color: #00f5ff;
+    text-decoration: none;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 700;
+    border: 2px solid #00f5ff; /* Borda SOLID */
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Pseudoclasse :hover - efeito ao passar o mouse */
+nav a:hover {
+    background-color: #00f5ff;
+    color: #1a0a2e;
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(0, 245, 255, 0.5);
+}
+
+/* ============================================
+   CONTEÚDO PRINCIPAL (MAIN)
+   ============================================ */
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+/* ============================================
+   SEÇÕES (SECTIONS)
+   ============================================ */
+section {
+    background-color: #2d1b69;
+    padding: 40px 35px;
+    margin-bottom: 40px;
+    border-radius: 20px;
+    border: 2px solid rgba(0, 245, 255, 0.2);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+    scroll-margin-top: 20px;
+}
+
+/* Títulos das seções */
+section h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2rem;
+    font-weight: 900;
+    color: #ffdd00;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 3px dashed #ff00e5; /* Borda DASHED com rosa neon */
+    text-shadow: 0 0 20px rgba(255, 221, 0, 0.2);
+}
+
+section h3 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #00f5ff;
+    margin: 25px 0 15px;
+    text-shadow: 0 0 15px rgba(0, 245, 255, 0.2);
+}
+
+/* ============================================
+   ARTIGOS (ARTICLES)
+   ============================================ */
+article {
+    background-color: rgba(26, 10, 46, 0.6);
+    padding: 20px 25px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    border-left: 4px solid #ff00e5; /* Borda SOLID rosa */
+}
+
+article p {
+    margin-bottom: 15px;
+    font-size: 1.05rem;
+}
+
+/* Destaque com STRONG */
+strong {
+    color: #ffdd00;
+    font-weight: 700;
+}
+
+/* Ênfase com EM */
+em {
+    color: #ff00e5;
+    font-style: italic;
+    font-weight: 500;
+}
+
+/* ============================================
+   LISTAS
+   ============================================ */
+/* Lista Ordenada (OL) - Gerações de consoles */
+ol {
+    background-color: rgba(26, 10, 46, 0.5);
+    padding: 20px 30px;
+    border-radius: 15px;
+    border: 2px dotted #00f5ff; /* Borda DOTTED ciano */
+    margin: 15px 0 25px;
+}
+
+ol li {
+    padding: 8px 0;
+    margin-left: 20px;
+    font-size: 1rem;
+    border-bottom: 1px solid rgba(0, 245, 255, 0.1);
+}
+
+ol li:last-child {
+    border-bottom: none;
+}
+
+/* Lista Não Ordenada (UL) - Curiosidades */
+ul {
+    background-color: rgba(26, 10, 46, 0.5);
+    padding: 20px 30px;
+    border-radius: 15px;
+    border: 2px double #ff00e5; /* Borda DOUBLE rosa neon */
+    margin: 15px 0;
+    list-style-type: none;
+}
+
+ul li {
+    padding: 10px 0 10px 35px;
+    font-size: 1rem;
+    position: relative;
+    border-bottom: 1px solid rgba(255, 0, 229, 0.1);
+}
+
+ul li:last-child {
+    border-bottom: none;
+}
+
+ul li::before {
+    content: "🕹️";
+    position: absolute;
+    left: 0;
+    top: 10px;
+}
+
+/* ============================================
+   LINKS EXTERNOS
+   ============================================ */
+a {
+    color: #00f5ff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: #ffdd00;
+    text-decoration: underline;
+}
+
+/* Link externo específico (abre em nova aba) */
+a[target="_blank"] {
+    color: #ff00e5;
+    font-weight: 700;
+}
+
+a[target="_blank"]:hover {
+    color: #ffdd00;
+    text-decoration: underline;
+}
+
+/* ============================================
+   GALERIA - DISPLAY GRID
+   ============================================ */
+.galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin: 25px 0;
+}
+
+.galeria-grid figure {
+    background-color: rgba(26, 10, 46, 0.7);
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+    border: 2px solid rgba(0, 245, 255, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.galeria-grid figure:hover {
+    transform: translateY(-5px);
+}
+
+.galeria-grid img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px; /* Arredondamento em imagens */
+    border: 3px solid #2d1b69;
+    transition: border-color 0.3s ease;
+}
+
+.galeria-grid img:hover {
+    border-color: #ffdd00;
+}
+
+.galeria-grid figcaption {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.8rem;
+    color: #00f5ff;
+    margin-top: 10px;
+    font-weight: 400;
+}
+
+/* Aside - informações adicionais */
+aside {
+    background-color: rgba(255, 221, 0, 0.1);
+    border: 2px dashed #ffdd00; /* Borda DASHED amarela */
+    border-radius: 12px;
+    padding: 15px 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+aside p {
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+/* ============================================
+   PALETA DE CORES - DISPLAY FLEX
+   ============================================ */
+.paleta-cores {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin: 25px 0 10px;
+}
+
+.cor-box {
+    width: 150px;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 12px;
+    padding: 10px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    border: 3px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.cor-box:hover {
+    transform: scale(1.05);
+}
+
+/* ============================================
+   RODAPÉ (FOOTER)
+   ============================================ */
+footer {
+    background: linear-gradient(135deg, #1a0a2e, #0d0520);
+    padding: 40px 20px;
+    text-align: center;
+    border-top: 4px solid #ff00e5; /* Borda SOLID rosa neon */
+    margin-top: 30px;
+}
+
+footer p {
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+    color: #a0a0c0;
+}
+
+footer strong {
+    color: #ffdd00;
+}
+
+footer .footer-ano {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.8rem;
+    color: #555;
+    letter-spacing: 3px;
+}
+
+footer small {
+    color: #666;
+    font-size: 0.8rem;
+}
+
+/* ============================================
+   SCROLL SUAVE PARA TODA A PÁGINA
+   ============================================ */
+html {
+    scroll-behavior: smooth;
+}
+
+/* ============================================
+   RESPONSIVIDADE
+   ============================================ */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.4rem;
+    }
+
+    header .subtitulo {
+        font-size: 0.8rem;
+    }
+
+    nav ul {
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 0.65rem;
+        padding: 8px 14px;
+    }
+
+    section {
+        padding: 25px 20px;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+    }
+
+    section h3 {
+        font-size: 1.1rem;
+    }
+
+    .galeria-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .cor-box {
+        width: 120px;
+        min-height: 80px;
+        font-size: 0.7rem;
+    }
+
+    ol li, ul li {
+        font-size: 0.9rem;
+    }
+
+    article {
+        padding: 15px 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1rem;
+    }
+
+    nav a {
+        font-size: 0.55rem;
+        padding: 6px 10px;
+    }
+
+    section {
+        padding: 18px 15px;
+    }
+
+    section h2 {
+        font-size: 1.2rem;
+    }
+
+    .galeria-grid figure {
+        padding: 10px;
+    }
+
+    .cor-box {
+        width: 100px;
+        min-height: 70px;
+        font-size: 0.6rem;
+    }
+
+    ol {
+        padding: 15px 20px;
+    }
+
+    ul {
+        padding: 15px 20px;
+    }
+
+    ul li {
+        padding-left: 28px;
+    }
+}
