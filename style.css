@@ -16,9 +16,11 @@
 body {
     /* 
         PALETA DE CORES - Cores Complementares
-        Roxo escuro (#1a0a2e), Roxo médio (#2d1b69),
-        Ciano neon (#00f5ff), Rosa neon (#ff00e5),
-        Amarelo (#ffdd00)
+        Roxo escuro (#1a0a2e) - Cor principal
+        Roxo médio (#2d1b69) - Cor secundária
+        Ciano neon (#00f5ff) - Cor de destaque 1
+        Rosa neon (#ff00e5) - Cor de destaque 2
+        Amarelo (#ffdd00) - Cor de destaque 3
     */
     font-family: 'Roboto', sans-serif;
     background-color: #1a0a2e; /* Roxo escuro */
@@ -70,7 +72,7 @@ nav ul {
     gap: 15px;
 }
 
-/* Seletor descendente: aplica estilo apenas aos links dentro de nav */
+/* Seletor descendente: aplica estilo apenas nos links dentro de nav */
 nav a {
     display: inline-block;
     padding: 10px 20px;
